@@ -27,10 +27,7 @@ const HomePage = () => {
           </button>
         </div>
       </header>
-
-      {/* Main Content Section */}
       <main className="container my-5">
-        {/* About Section */}
         <section className="mb-5">
           <h2>About AuctionMaster</h2>
           <p>
@@ -39,8 +36,6 @@ const HomePage = () => {
             Join thousands of users who trust us to bring them exclusive deals and unique finds.
           </p>
         </section>
-
-        {/* How It Works Section */}
         <section>
           <h2>How It Works</h2>
           <ol className="mt-3" style={{ fontSize: '1.1rem' }}>

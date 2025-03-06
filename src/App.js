@@ -39,16 +39,13 @@ function App() {
   const userRoles = Array.isArray(userRolesRaw) ? userRolesRaw : [userRolesRaw];
 
   const isSeller =
-    isAuthenticated &&
-    (userRoles.includes('SELLER') || userRoles.includes('ROLE_SELLER'));
+    isAuthenticated && userRoles.includes('SELLER');
 
   const isBidder =
-    isAuthenticated &&
-    (userRoles.includes('BIDDER') || userRoles.includes('ROLE_BIDDER'));
+    isAuthenticated && userRoles.includes('BIDDER');
 
   const isAdmin =
-    isAuthenticated &&
-    (userRoles.includes('ADMIN') || userRoles.includes('ROLE_ADMIN'));
+    isAuthenticated && userRoles.includes('ADMIN');
 
   // Bidders and Sellers can view auction details
   const canViewAuctionDetails = isBidder || isSeller;
